@@ -17,6 +17,7 @@ public class FlightStatusLastCall extends FlightStatus{
     }
 
     public boolean delay(Flight flight){
+        flight.setStatus(FlightStatusDelayedLastCall.getInstance());
         return true;
     }
 

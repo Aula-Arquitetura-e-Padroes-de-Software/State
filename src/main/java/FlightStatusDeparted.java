@@ -16,15 +16,15 @@ public class FlightStatusDeparted extends FlightStatus{
         return true;
     }
 
-    public boolean delay(Flight flight){
+    public boolean divert(Flight flight){
+        flight.setStatus(FlightStatusDivertedDeparted.getInstance());
         return true;
     }
 
-    public boolean cancel(Flight flight){
-        flight.setStatus(FlightStatusCancelled.getInstance());
+    public boolean emergency(Flight flight){
+        flight.setStatus(FlightStatusEmergencyDeparted.getInstance());
         return true;
     }
-
 
     @Override
     public String getFlightStatusName() {

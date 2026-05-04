@@ -4,8 +4,7 @@ public class Flight {
     private String flightNumber;
     private String destination;
 
-    public Flight(FlightStatus flightStatus, String flightNumber, String destination){
-        this.flightStatus = flightStatus;
+    public Flight(String flightNumber, String destination){
         this.flightNumber = flightNumber;
         this.destination = destination;
         this.flightStatus = FlightStatusScheduled.getInstance();

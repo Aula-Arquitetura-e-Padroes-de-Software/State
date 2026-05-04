@@ -11,17 +11,18 @@ public class FlightStatusEnRoute extends FlightStatus{
         return instance;
     }
 
-    public boolean proceed(Flight flight){
+    public boolean land(Flight flight){
         flight.setStatus(FlightStatusArrived.getInstance());
         return true;
     }
 
-    public boolean delay(Flight flight){
+    public boolean divert(Flight flight){
+        flight.setStatus(FlightStatusDivertedEnRoute.getInstance());
         return true;
     }
 
-    public boolean cancel(Flight flight){
-        flight.setStatus(FlightStatusCancelled.getInstance());
+    public boolean emergency(Flight flight){
+        flight.setStatus(FlightStatusEmergencyEnRoute.getInstance());
         return true;
     }
 

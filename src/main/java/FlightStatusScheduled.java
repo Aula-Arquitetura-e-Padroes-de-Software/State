@@ -17,6 +17,7 @@ public class FlightStatusScheduled extends FlightStatus{
     }
 
     public boolean delay(Flight flight){
+        flight.setStatus(FlightStatusDelayedScheduled.getInstance());
         return true;
     }
 

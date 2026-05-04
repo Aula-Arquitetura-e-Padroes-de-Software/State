@@ -14,6 +14,6 @@ public class FlightStatusIncident  extends FlightStatus{
 
     @Override
     public String getFlightStatusName() {
-        return "SEE COUNTER";
+        return "INCIDENT";
     }
 }

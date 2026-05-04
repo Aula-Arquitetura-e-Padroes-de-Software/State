@@ -17,6 +17,7 @@ public class FlightStatusBoarding extends FlightStatus{
     }
 
     public boolean delay(Flight flight){
+        flight.setStatus(FlightStatusDelayedBoarding.getInstance());
         return true;
     }
 

@@ -21,6 +21,6 @@ public class FlightStatusDelayedInbound extends FlightStatusDelayed{
     @Override
     public boolean proceed(Flight flight) {
         flight.setStatus(FlightStatusBoarding.getInstance());
-        return false;
+        return true;
     }
 }
